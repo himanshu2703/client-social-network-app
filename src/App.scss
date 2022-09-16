@@ -2,3 +2,74 @@
   text-align: center;
   font-weight: bold;
 }
+
+.login-acc, .create-acc {
+  margin-top: 8px;
+  .text-message {
+    font-weight: 400;
+  }
+  .register, .login {
+    text-decoration: underline;
+    margin-left: 18px;
+    color: #485fc7;
+    cursor: pointer;
+  }
+}
+
+.user-feed {
+
+}
+
+.styleCard {
+  border-radius: 8px;
+  box-shadow: 0px 0px 8px #ccc;
+  color: #253b56;
+  margin: 12px 0px;
+  width: 350px;
+  margin-left: 270px;
+}
+
+.styleCardContent {
+  padding: 4px 16px 20px 16px;
+}
+
+.styleCardTitle {
+  font-family: Avenir-Heavy;
+  font-size: 20;
+  font-weight: 600;
+  margin: 12px 0px 0px 0px;
+}
+
+.styleLocationLabel {
+  color: #8294aa;
+  font-size: 14;
+  margin: 4px 0;
+}
+
+.styleDescription {
+  font-size: 14;
+  margin: 8px 0 0 0;
+}
+
+.create-popup {
+  top: 50px;
+  left: 306px;
+  width: 900px;
+  position: absolute;
+  z-index: 100;
+}
+
+.create-post-overlay {
+  height: 100%;
+  width: 100%;
+  opacity: 0.7;
+  position: fixed;
+  background: rgb(0, 0, 0);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 50;
+  cursor: auto;
+  overflow: hidden;
+}

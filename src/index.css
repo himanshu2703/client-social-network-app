@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.testButton {
+  margin-top: 20px;
+}
+
+small {
+  display: block;
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 2em;
+  border-bottom: 1px solid rgb(248, 248, 248);
+  margin-bottom: 25px;
+}
