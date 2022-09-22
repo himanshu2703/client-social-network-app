@@ -1,6 +1,8 @@
 .App {
   text-align: center;
   font-weight: bold;
+  padding: 10px 0;
+  border: 0;
 }
 
 .login-acc, .create-acc {
@@ -25,15 +27,18 @@
   box-shadow: 0px 0px 8px #ccc;
   color: #253b56;
   margin: 12px 0px;
-  width: 350px;
-  margin-left: 270px;
+  width: 550px;
+  height: 250px
 }
 
 .styleCardContent {
   padding: 4px 16px 20px 16px;
+  height: 100%;
+  width: 100%;
 }
 
 .styleCardTitle {
+  height: 25px;
   font-family: Avenir-Heavy;
   font-size: 20;
   font-weight: 600;
@@ -41,12 +46,14 @@
 }
 
 .styleLocationLabel {
+  height: 25px;
   color: #8294aa;
   font-size: 14;
   margin: 4px 0;
 }
 
 .styleDescription {
+  height: 150px;
   font-size: 14;
   margin: 8px 0 0 0;
 }
@@ -54,7 +61,7 @@
 .create-popup {
   top: 50px;
   left: 306px;
-  width: 900px;
+  width: 1250px;
   position: absolute;
   z-index: 100;
 }

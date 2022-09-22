@@ -10,7 +10,7 @@ import Footer from './HeaderFooter/Footer';
 
 function App() {
     return (
-        <div>
+        <div className='social-app'>
             <BrowserRouter>
                 <Header />
                 <Routes>

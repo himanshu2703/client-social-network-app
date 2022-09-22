@@ -10,8 +10,7 @@ mutation loginUser($email: String!, $password: String!) {
         email: $email, password: $password
     }
     ){
-    username
-    email
+    userId
     token
   }
 }

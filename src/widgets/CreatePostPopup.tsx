@@ -8,12 +8,10 @@ mutation createPost($title: String!, $description: String!, $location: String!) 
         title: $title, description: $description, location: $location
     }
     ){
+    _id
     title
     description
     location
-    username
-    likeCount
-    commentCount
   }
 }
 `;

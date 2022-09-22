@@ -3,14 +3,13 @@ import { useNavigate } from "react-router-dom";
 import { useMutation, gql } from '@apollo/client';
 
 const REGISTER_DETAILS =  gql`
-mutation registerUser($username: String!, $email: String!, $password: String!) {
-  registerUser(
-    registerInput:{
-        username: $username, email: $email, password: $password
+mutation createUser($name: String!, $email: String!, $password: String!) {
+  createUser(
+    userInput:{
+        name: $name, email: $email, password: $password
     }
     ){
-    username
-    email
+    userId
     token
   }
 }
@@ -27,14 +26,14 @@ function Register() {
           _,result
         ) {
             console.log(result)
-            localStorage.setItem('access-token', result.data.registerUser.token);
+            localStorage.setItem('access-token', result.data.createUser.token);
             navigate('/feed');
         },
         onError(err) {
           console.log(err);
         },
         variables: {
-            username: username,
+            name: username,
             email: email,
             password: password
         }

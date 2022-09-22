@@ -1,9 +1,10 @@
 import React from "react";
+import './Header.scss';
 
 const Header = () => {
   return (
-    <div>
-        <h1>Hii</h1>
+    <div className="header-container">
+        <h1>MetaVerse</h1>
     </div>
   );
 };
