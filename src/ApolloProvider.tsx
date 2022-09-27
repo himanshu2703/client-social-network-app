@@ -4,7 +4,7 @@ import { ApolloClient, ApolloProvider, createHttpLink, InMemoryCache } from '@ap
 import { setContext } from 'apollo-link-context';
 
 const httpLink: any = createHttpLink({
-    uri: 'http://localhost:8000/graphql'
+    uri: 'https://server-social-network-app.herokuapp.com/graphql'
 })
 
 const authorizationLink: any = setContext(()=>{
